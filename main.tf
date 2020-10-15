@@ -7,7 +7,7 @@ resource "aws_instance" "example" {
   instance_type               = var.instance_type
   associate_public_ip_address = false
   key_name                    = "tf-training"
-  subnet_id                   = "subnet-046134d61fe120cbc"
+  subnet_id                   = ""
 
   tags = {
     Name = "${var.application_name}-ec2"
